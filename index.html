@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obst & Gemüse SHOP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-img">
+            <div class="header-txt">Obst & Gemüse bestellen und geliefert bekommen. <br> Einfach & Gut.</div>
+        </div>
+    </header>
+
+    <div class="nav">
+        <ul>
+            <li><a class='active-nav' href="#">Unser Obst</a></li>
+            <li><a href="#">Unser Gemüse</a></li>
+            <li><a href="#">Unsere Angebote</a></li>
+            <li><a href="#">Unser Team</a></li>
+            <li><a href="#">Unsere Lieferanten</a></li>
+            <li class="shopping-cart"><a href="shopping-cart.html"><img src="./src/img/shopping-cart.png" alt=""></a></li>
+        </ul>
+    </div>
+
+    <div class="category-wrapper">
+        <h1 class="category">Unser Obst</h1>
+    </div>
+    
+    <div class="main-wrapper">
+        <div class="product-container">
+            <div class="product">
+                <img src="./src/img/cherry.jpg" alt="Produkt 1">
+                <h2>Kirsche</h2>
+                <p>Eine wirkliche schmackhafte Kirsche macht doch jeden glücklich.</p>
+                <div class="button-wrapper">
+                    <button>Hinzufügen</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./src/img/berry-mix.jpg" alt="Produkt 2">
+                <h2>Wildbeeren-Mischung</h2>
+                <p>Ich kann mich nicht entscheiden. Ach, was soll's. Ich nehme einfach alles!</p>
+                <div class="button-wrapper">
+                    <button>Hinzufügen</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./src/img/blueberry.jpg" alt="Produkt 3">
+                <h2>Heidelbeere</h2>
+                <p>Blaue Beeren? Blaue Beeren!</p>
+                <div class="button-wrapper">
+                    <button>Hinzufügen</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./src/img/lime.jpg" alt="Produkt 4">
+                <h2>Limette</h2>
+                <p>Es ist heiß, man schwitzt, man braucht Erfrischung. Limetten erfrischen!</p>
+                <div class="button-wrapper">
+                    <button>Hinzufügen</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./src/img/orange.jpg" alt="Produkt 5">
+                <h2>Orange</h2>
+                <p>Muss nicht unbedingt Weihnachtszeit sein, damit die schmecken. Orangen wusste schon Don Corleone zu schätzen.</p>
+                <div class="button-wrapper">
+                    <button>Hinzufügen</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./src/img/peach.jpg" alt="Produkt 6">
+                <h2>Pfirsich</h2>
+                <p>Ein Obst perfekt für den Sommer gefällig?. Bitteschön, Pfirsich!</p>
+                <div class="button-wrapper">
+                    <button>Hinzufügen</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./src/img/pear.jpg" alt="Produkt 7">
+                <h2>Birne</h2>
+                <p>Birnen sind gut für unsere Birnen.</p>
+                <div class="button-wrapper">
+                    <button>Hinzufügen</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./src/img/strawberry.jpg" alt="Produkt 8">
+                <h2>Erdbeere</h2>
+                <p>Mit Schlagsahne, auf einer Torte oder püriert - Erdbeeren sind immer schmackofatzo.</p>
+                <div class="button-wrapper">
+                    <button>Hinzufügen</button>
+                </div>
+            </div>
+        </div>
+    
+          <div class="cart">
+              <div class="cart-header">
+                  <div class="column1">Item</div>
+                  <div class="column2">Unit price</div>
+                  <div class="column3">Units</div>
+              </div>
+              <div class="cart-items">
+                  <!-- render cart items here -->
+                  <div class="cart-item">
+                    <div class="item-info" onclick="removeItemFromCart(${item.id})">
+                        <img src="${item.imgSrc}" alt="${item.name}">
+                        <h4>Erdbeere</h4>
+                    </div>
+                    <div class="unit-price">
+                        <small>$</small>${item.price}
+                    </div>
+                    <div class="units">
+                        <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
+                        <div class="number">${item.numberOfUnits}</div>
+                        <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})">+</div>           
+                    </div>
+                    </div>
+                    `
+              </div>
+              <div class="cart-footer">
+                  <div class="subtotal">
+                      Subtotal (0 items): $0
+                  </div>
+                
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="link_zum_datenschutz">Datenschutz</a></li>
+            <li><a href="link_zum_impressum">Impressum</a></li>
+            <li>Kontaktformular</li>
+        </ul>
+        <p>&copy; 2023 Alexander Haehnlein</p>
+    </footer>
+
+    <script src="main.js"></script>
+   
+</body>
+</html>

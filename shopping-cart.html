@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obst & Gemüse SHOP</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+
+    <header>
+        <div class="header"></div>
+        <div class="header-img">
+            <div class="header-txt">Obst & Gemüse bestellen und geliefert bekommen. <br> Einfach & Gut.</div>
+
+        </div>
+    </header>
+  <!-- Nav -->
+ <div class="nav">
+    <ul>
+        <li><a href="index.html">Unser Obst</a></li>
+        <li><a href="#">Unser Gemüse</a></li>
+        <li><a href="#">Unsere Angebote</a></li>
+        <li><a href="#">Unser Team</a></li>
+        <li><a href="#">Unsere Lieferanten</a></li>
+        <li class='active-nav shopping-cart'><a href="#"><img src="./src/img/shopping-cart.png" alt=""></a></li>
+     </ul>
+    </div>
+  
+
+
+    <!-- Shopping-Cart -->
+
+    <div class="category-wrapper">
+        <h1 class="category">Warenkorb</h1></div>
+        
+        <div class="shopping-cart-container">
+            <div class="cart">
+              <div class="product-shopping-cart" data-id="1">
+                <span>Produkt A</span>
+                <span>29.99 €</span>
+                <span class="remove-btn">Entfernen</span>
+              </div>
+              <div class="product-shopping-cart" data-id="2">
+                <span>Produkt B</span>
+                <span>14.99 €</span>
+                <span class="remove-btn">Entfernen</span>
+              </div>
+              <div class="product-shopping-cart" data-id="2">
+                <span>Produkt B</span>
+                <span>14.99 €</span>
+                <span class="remove-btn">Entfernen</span>
+              </div>
+              <div class="product-shopping-cart" data-id="2">
+                <span>Produkt B</span>
+                <span>14.99 €</span>
+                <span class="remove-btn">Entfernen</span>
+              </div>
+              <!-- Weitere Produkt-Elemente können hinzugefügt werden -->
+              <div class="total">
+                Gesamtsumme: <span id="total-price">0.00 €</span>
+              </div>
+              <button class="checkout-btn">Zur Kasse</button>
+            </div>
+          </div>
+    <!-- Footer -->
+
+    <div class="footer-wrapper">
+    <footer>
+        <ul>
+            <li><a href="link_zum_datenschutz">Datenschutz</a></li>
+            <li><a href="link_zum_impressum">Impressum</a></li>
+            <li>Kontaktformular</li>
+        </ul>
+        <p>&copy; 2023 Alexander Haehnlein</p>
+    </footer>
+</div>
+   
+<script src="products.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

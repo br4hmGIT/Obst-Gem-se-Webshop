@@ -1,4 +1,6 @@
-# Obst-Gem-se-Webshop
+# Obst-Gemüse-Webshop
+
+ ### IN WORK ###
 
 Ein kleiner Online-Shop für Obst und Gemüse
 

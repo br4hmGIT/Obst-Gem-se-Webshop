@@ -11,7 +11,7 @@ function renderProducts(){
         <div class="product">
                 <img src="${product.imgSrc}" alt="Produkt 1">
                 <h2>${product.name}</h2>
-                <p>Eine wirkliche schmackhafte Kirsche macht doch jeden glücklich.</p>
+                <p>${product.description}</p>
                 <p>${product.price} € / kg</p>
                 <div class="button-wrapper">
                     <button>Hinzufügen</button>

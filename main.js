@@ -7,11 +7,12 @@ const productsEl = document.querySelector('.product-container');
 
 function renderProducts(){
     products.forEach((product) => {
-        productsEl.innerHTML = `
+        productsEl.innerHTML += `
         <div class="product">
-                <img src="./src/img/cherry.jpg" alt="Produkt 1">
-                <h2>Kirsche</h2>
+                <img src="${product.imgSrc}" alt="Produkt 1">
+                <h2>${product.name}</h2>
                 <p>Eine wirkliche schmackhafte Kirsche macht doch jeden glücklich.</p>
+                <p>${product.price} € / kg</p>
                 <div class="button-wrapper">
                     <button>Hinzufügen</button>
                 </div>
@@ -21,3 +22,4 @@ function renderProducts(){
 
     })
 }
+renderProducts();

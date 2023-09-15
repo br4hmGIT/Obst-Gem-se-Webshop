@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,37 +96,7 @@
             </div>
         </div>
     
-          <div class="cart">
-              <div class="cart-header">
-                  <div class="column1">Item</div>
-                  <div class="column2">Unit price</div>
-                  <div class="column3">Units</div>
-              </div>
-              <div class="cart-items">
-                  <!-- render cart items here -->
-                  <div class="cart-item">
-                    <div class="item-info" onclick="removeItemFromCart(${item.id})">
-                        <img src="${item.imgSrc}" alt="${item.name}">
-                        <h4>Erdbeere</h4>
-                    </div>
-                    <div class="unit-price">
-                        <small>$</small>${item.price}
-                    </div>
-                    <div class="units">
-                        <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
-                        <div class="number">${item.numberOfUnits}</div>
-                        <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})">+</div>           
-                    </div>
-                    </div>
-                    `
-              </div>
-              <div class="cart-footer">
-                  <div class="subtotal">
-                      Subtotal (0 items): $0
-                  </div>
-                
-              </div>
-          </div>
+      
       </div>
     </div>
     </div>
